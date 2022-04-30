@@ -1,12 +1,75 @@
 {
-    "contenido":[
-    {"tag": "saludo",
-        "patrones": ["Hola", "un saludo"],
-        "respuestas": ["Hola, como estas?", "Que tal va todo?"]
-    },
-    {"tag": "despedida",
-        "patrones":["adios", "nos vemos"],
-        "respuestas":["Hasta la proxima!", "Nos vemos pronto!"]
-    }
-    ]
+	"contenido": [
+		{
+			"tag": "saludo",
+			"patrones": ["Hola", "saludo"],
+			"respuestas": ["Hola, como estas?", "Que tal va todo?"]
+		},
+		{
+			"tag": "despedida",
+			"patrones":["adios", "nos vemos"],
+			"respuestas":["Hasta la proxima!", "Nos vemos pronto!"]
+		},
+		{
+			"tag": "alta_umf",
+			"patrones":["darme alta", "dar alta clinica", "darme alta umf", "darme alta clinica", "dar alta umf"],
+			"respuestas":[
+				"Para realizar el alta de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, comprobante de domicilio, NSS, una fotografia infantil y acta de nacimiento"
+			]
+		},
+		{
+			"tag": "baja_umf",
+			"patrones":["dar baja", "dar baja clinica", "dar baja umf", "dar baja clinica", "dar baja umf"],
+			"respuestas":[
+				"Para realizar la baja de un UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, NSS, CURP y acta de defuncion o acta de divorcio en caso de baja por divorcio"
+			]
+		},
+		{
+			"tag": "actualizar_umf",
+			"patrones":["actualizar clinica", "actualizar umf", "cambiar clinica", "cambiar umf", "modificar umf", "modificar clinica"],
+			"respuestas":[
+				"Para realizar la actualización de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, comprobante de domicilio, NSS y una fotografia infantil"
+			]
+		},
+		{
+			"tag": "accidente_trabajo",
+			"patrones":["calificación accidente", "accidente laboral", "enfermedad trabajo", "enfermedad laboral", "accidente trabajo", "calificación accidente"],
+			"respuestas":[
+				"Para obtener tu aviso para calificación de accidente o enfermedad de trabajo ante el IMSS deberas\nacudir a tu clinica que te corresponda de acuerdo a tu domicilio con tu\nidentificación oficial, cartilla nacional de salud, aviso de atención médica inicial y calificación de probable accidente de trabajo ST-7 y ST-9.\nEn caso de defunción sera acta de defunción, certificado de necropsia que incluya examen toxicológico\ncopia certificada de la Averiguación Previa del Ministerio Público y resumen medico de atención inicial de servicios en caso de tenerlo"
+			]
+		},
+		{
+			"tag": "inscripcion_guarderia",
+			"patrones":["inscribir guarderia", "inscripcion guarderia", "guarderia imss", "incribir hijo guarderia", "incribir hija guarderia"],
+			"respuestas":[
+				"Para incribir a tu hijo a las guarderias del IMSS deberas acudir a la guarderia de tu interes o entrar al siguiente link:\nhttps://stigi.imss.gob.mx/\nen un horario de lunes a viernes de 7 a 19 horas con los siguientes datos de tu hijo/a:\nNombre completo\nFecha de nacimiento\nActa de nacimiento\nCartilla Nacional de Salud\nExamen Medico requisitado\nTambien deberas presentar tu nombre, NSS, domicilio, datos de contacto, UMA, parentesco, CURP, identificación oficial con fotografia, solicitud de inscripción y constancia de platica de nuevo ingreso.\nAdemas deberas presentar el nombre o razon social, domicilio y telefono y extensiones de tu lugar de trabajo."
+			]
+		},
+		{
+			"tag": "constancia_no_derechohabiencia",
+			"patrones":["obtener constancia no derechohabiente", "constancia no derechohabiente", "sacar constancia no derechohabiente"],
+			"respuestas":[
+				"Para obtener tu constancia de no derechohabiente deberas ingresar al siguiente link\nhttp://www.imss.gob.mx/constancia-no-derechohabiencia\ncon tu CURP y correo electronico donde se te enviara tu constancia con una validez de un día."
+			]
+		},
+		{
+			"tag": "incripcion_cursos_imss_no_derechohabiente",
+			"patrones":["incribirme cursos representativos imss no derechohabiente", "incripcion cursos representativos imss no derechohabiente", "incribirme curso representativos imss no derechohabiente", "incripcion curso representativos imss no derechohabiente"],
+			"respuestas":[
+				"Para realizar tu inscripción a cursos para representativos IMSS no derechohabientes deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, comprobante de domicilio, carta de autorización de padres o tutor en caso de ser menor de edad y contancia firmada por el director de la unidad que lo acredite como representativo.\nAdemás deberas presentar un pago de 80.00 pesos en el momento de tu tramite."
+			]
+		},
+		{
+			"tag": "reposicion_credencial_prestamos_sociales",
+			"patrones":["reposicion credencial usuarios prestamos sociales", "reponer credencial prestamos sociales", "reponer credencial prestamo social", "reponer credencial usuarios prestamos sociales"],
+			"respuestas":[
+				"Para reposición de tu credencial para usuarios de prestamos sociales deberas presentarte en ventanilla y mencionar que deseas reponer tu credencial.\nRecibiras una ficha de deposito para realizar el pago de tu reposición con un valor de 40.00 pesos\n y deberas presentar tu ficha ya pagada nuevamente en ventanilla para recoger tu credencial."
+			]
+		},
+		{
+			"tag": "groserias",
+			"patrones":["puto"],
+			"respuestas":["Callate perra"]
+		}
+	]
 }
