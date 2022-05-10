@@ -64,10 +64,10 @@ tf.compat.v1.reset_default_graph()
 red = tflearn.input_data(shape=[None, len(entrenamiento[0])])
 
 #Creamos una capa de neuronas (aqui depende de nuestra cantidad de palabras en TAGS del JSON):
-red = tflearn.fully_connected(red, 123)
+red = tflearn.fully_connected(red, 301)
 
 #Creamos otra capa de neuronas:
-red = tflearn.fully_connected(red, 123)
+red = tflearn.fully_connected(red, 301)
 
 #Esta sera la capa final, o sea, la cantidad de patrones que tengamos:
 red = tflearn.fully_connected(red, len(salida[0]), activation="softmax")
@@ -80,7 +80,7 @@ modelo = tflearn.DNN(red)
 #try: #Cargamos el modelo si ya tenemos las neuronas entrenadas
 #modelo.load("modelo.tflearn")
 #except: #En caso de que no las tengamos entrenadas creamos uno por primera vez:
-modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=123, show_metric=True)
+modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=301, show_metric=True)
 #modelo.save("modelo.tflearn")
 
 #Funcion principal que reconoce lo que introduce el usuario y lo compara para dar una respuesta:
@@ -103,5 +103,4 @@ def mainBot():
                 respuesta = tagAux["respuestas"]
         
         print("BOT:", random.choice(respuesta))
-
 mainBot()

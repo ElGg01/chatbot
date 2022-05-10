@@ -12,64 +12,120 @@
 		},
 		{
 			"tag": "alta_umf",
-			"patrones":["darme alta", "dar alta clinica", "darme alta umf", "darme alta clinica", "dar alta umf"],
+			"patrones":["darme alta", "dar alta clinica", "darme alta umf", "darme alta clinica", "dar alta umf", "registrar umf", "registrar clinica"],
 			"respuestas":[
-				"Para realizar el alta de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, comprobante de domicilio, NSS, una fotografia infantil y acta de nacimiento"
+				"Para realizar el alta de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, NSS, una fotografia infantil y acta de nacimiento"
 			]
 		},
 		{
 			"tag": "baja_umf",
 			"patrones":["dar baja", "dar baja clinica", "dar baja umf", "dar baja clinica", "dar baja umf"],
 			"respuestas":[
-				"Para realizar la baja de un UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, NSS, CURP y acta de defuncion o acta de divorcio en caso de baja por divorcio"
+				"Para realizar la baja de un UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, NSS, CURP y acta de defuncion o acta de divorcio en caso de baja por divorcio"
 			]
 		},
 		{
 			"tag": "actualizar_umf",
 			"patrones":["actualizar clinica", "actualizar umf", "cambiar clinica", "cambiar umf", "modificar umf", "modificar clinica"],
 			"respuestas":[
-				"Para realizar la actualización de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, comprobante de domicilio, NSS y una fotografia infantil"
+				"Para realizar la actualización de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, NSS y una fotografia infantil"
 			]
 		},
 		{
 			"tag": "accidente_trabajo",
 			"patrones":["calificación accidente", "accidente laboral", "enfermedad trabajo", "enfermedad laboral", "accidente trabajo", "calificación accidente"],
 			"respuestas":[
-				"Para obtener tu aviso para calificación de accidente o enfermedad de trabajo ante el IMSS deberas\nacudir a tu clinica que te corresponda de acuerdo a tu domicilio con tu\nidentificación oficial, cartilla nacional de salud, aviso de atención médica inicial y calificación de probable accidente de trabajo ST-7 y ST-9.\nEn caso de defunción sera acta de defunción, certificado de necropsia que incluya examen toxicológico\ncopia certificada de la Averiguación Previa del Ministerio Público y resumen medico de atención inicial de servicios en caso de tenerlo"
+				"Para obtener tu aviso para calificación de accidente o enfermedad de trabajo ante el IMSS deberas acudir a tu clinica que te corresponda de acuerdo a tu domicilio con tu identificación oficial, cartilla nacional de salud, aviso de atención médica inicial y calificación de probable accidente de trabajo ST-7 y ST-9. En caso de defunción sera acta de defunción, certificado de necropsia que incluya examen toxicológico copia certificada de la Averiguación Previa del Ministerio Público y resumen medico de atención inicial de servicios en caso de tenerlo"
 			]
 		},
 		{
 			"tag": "inscripcion_guarderia",
 			"patrones":["inscribir guarderia", "inscripcion guarderia", "guarderia imss", "incribir hijo guarderia", "incribir hija guarderia"],
 			"respuestas":[
-				"Para incribir a tu hijo a las guarderias del IMSS deberas acudir a la guarderia de tu interes o entrar al siguiente link:\nhttps://stigi.imss.gob.mx/\nen un horario de lunes a viernes de 7 a 19 horas con los siguientes datos de tu hijo/a:\nNombre completo\nFecha de nacimiento\nActa de nacimiento\nCartilla Nacional de Salud\nExamen Medico requisitado\nTambien deberas presentar tu nombre, NSS, domicilio, datos de contacto, UMA, parentesco, CURP, identificación oficial con fotografia, solicitud de inscripción y constancia de platica de nuevo ingreso.\nAdemas deberas presentar el nombre o razon social, domicilio y telefono y extensiones de tu lugar de trabajo."
+				"Para incribir a tu hijo a las guarderias del IMSS deberas acudir a la guarderia de tu interes o entrar al siguiente link: https://stigi.imss.gob.mx/ en un horario de lunes a viernes de 7 a 19 horas con los siguientes datos de tu hijo/a: Nombre completo Fecha de nacimiento Acta de nacimiento Cartilla Nacional de Salud Examen Medico requisitado Tambien deberas presentar tu nombre, NSS, domicilio, datos de contacto, UMA, parentesco, CURP, identificación oficial con fotografia, solicitud de inscripción y constancia de platica de nuevo ingreso. Ademas deberas presentar el nombre o razon social, domicilio y telefono y extensiones de tu lugar de trabajo."
 			]
 		},
 		{
 			"tag": "constancia_no_derechohabiencia",
 			"patrones":["obtener constancia no derechohabiente", "constancia no derechohabiente", "sacar constancia no derechohabiente"],
 			"respuestas":[
-				"Para obtener tu constancia de no derechohabiente deberas ingresar al siguiente link\nhttp://www.imss.gob.mx/constancia-no-derechohabiencia\ncon tu CURP y correo electronico donde se te enviara tu constancia con una validez de un día."
+				"Para obtener tu constancia de no derechohabiente deberas ingresar al siguiente link http://www.imss.gob.mx/constancia-no-derechohabiencia con tu CURP y correo electronico donde se te enviara tu constancia con una validez de un día."
 			]
 		},
 		{
 			"tag": "incripcion_cursos_imss_no_derechohabiente",
 			"patrones":["incribirme cursos representativos imss no derechohabiente", "incripcion cursos representativos imss no derechohabiente", "incribirme curso representativos imss no derechohabiente", "incripcion curso representativos imss no derechohabiente"],
 			"respuestas":[
-				"Para realizar tu inscripción a cursos para representativos IMSS no derechohabientes deberas acudir a tu clinica mas cercana a tu domicilio con tu\nidentificación oficial, comprobante de domicilio, carta de autorización de padres o tutor en caso de ser menor de edad y contancia firmada por el director de la unidad que lo acredite como representativo.\nAdemás deberas presentar un pago de 80.00 pesos en el momento de tu tramite."
+				"Para realizar tu inscripción a cursos para representativos IMSS no derechohabientes deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, carta de autorización de padres o tutor en caso de ser menor de edad y contancia firmada por el director de la unidad que lo acredite como representativo. Además deberas presentar un pago de 80.00 pesos en el momento de tu tramite."
 			]
 		},
 		{
 			"tag": "reposicion_credencial_prestamos_sociales",
 			"patrones":["reposicion credencial usuarios prestamos sociales", "reponer credencial prestamos sociales", "reponer credencial prestamo social", "reponer credencial usuarios prestamos sociales"],
 			"respuestas":[
-				"Para reposición de tu credencial para usuarios de prestamos sociales deberas presentarte en ventanilla y mencionar que deseas reponer tu credencial.\nRecibiras una ficha de deposito para realizar el pago de tu reposición con un valor de 40.00 pesos\n y deberas presentar tu ficha ya pagada nuevamente en ventanilla para recoger tu credencial."
+				"Para reposición de tu credencial para usuarios de prestamos sociales deberas presentarte en ventanilla y mencionar que deseas reponer tu credencial. Recibiras una ficha de deposito para realizar el pago de tu reposición con un valor de 40.00 pesos  y deberas presentar tu ficha ya pagada nuevamente en ventanilla para recoger tu credencial."
+			]
+		},
+		{
+			"tag": "dictamen_incapacidad",
+			"patrones":["obtener dictamen incapacidad", "dictamen incapacidad",  "sacar dictamen incapacidad"],
+			"respuestas":[
+				"Para obtener tu dictamen de incapacidad deberas acudir a tu clinica mas cercana a tu domicilio con tu Cartilla Nacinal de Salud, identificación oficial, solicitud de beneficiario incapacitado ante el Control de Prestaciones de la Unidad de Medicina Familiar y pase del servicio de medicina familiar o de especialista médico de segundo ó tercer nivel de Atención a Salud en el Trabajo"
+			]
+		},
+		{
+			"tag": "inscripcion_cursos",
+			"patrones":["inscripcion cursos imss", "inscripcion curso imss", "inscribirme curso imss", "inscribirme cursos imss"],
+			"respuestas":[
+				"Para incribirte en alguno de los cursos que ofrece el IMSS deberas acudir a tu clinica más cercano a tu domicilio y presentar identificación oficial, carta de autorización de tutor, ficha de deposito y en caso de ser derechohabiente credencial escolar y comprobante de domicilio. El pago que deberas de realizar sera de un valor de 80.00 pesos."
+			]
+		},
+		{
+			"tag": "correccion_datos_personales",
+			"patrones":["corregir datos", "correccion datos", "regularizar datos", "regularizacion datos", "corregir datos personales", "correccion datos personales", "regularizar datos personales", "regularizacion datos personales", "cambiar datos", "cambio datos", "cambiar datos personales", "cambio datos personales"],
+			"respuestas":[
+				"Para realizar la regularización y/o corrección de sus datos acudir a su clinica o presentar su tramite desde internet a travez del siguiente link: https://serviciosdigitales.imss.gob.mx/correcciondatosasegurado-web-ciudadano/wizard/correccionDatosAsegurado/ con los siguientes documentos a la mano: CURP, acta de nacimiento, identificación oficial y un documento expedido por el IMSS que contenga su NSS. Además en caso de realizar su tramite en linea debera tener un correo electronico donde se le hara llegar la confirmación del tramite y en caso de tramite presencial debera presentar la solicitud de regularización y/o corrección de datos personales del asegurado que se encuentra en el siguinete link: http://www.imss.gob.mx/sites/all/statics/pdf/formatos/SolicRegCorreDatosPerso.pdf"
+			]
+		},
+		{
+			"tag": "solicitud_protesis",
+			"patrones":["solicitud protesis", "solicitar protesis", "solicitud ortesis", "solicitar ortesis", "solicitud ayuda tecnica", "solicitar ayuda tecnica"],
+			"respuestas":[
+				"Para solicitar prótesis externa, ortesis o ayuda técnica debera acudir a su clinica asiganada con su identificación oficial, Cartilla Nacional de Salud y orden para la dotación o reparación de prótesis, ortesis o ayudas funcionales en un horario de: 8 a 20 horas de lunes a viernes."
+			]
+		},
+		{
+			"tag": "asignacion_nss",
+			"patrones":["asignacion nss", "asignar nss", "localizar nss", "obtener nss", "saber nss", "asignen nss", "den nss", "pedir nss", "localicen nss", "asignacion numero seguro social", "asignar numero seguro social", "asignacion numero seguro social", "asignar numero seguro social", "localizar numero seguro social", "obtener numero seguro social", "saber numero seguro social", "asignen numero seguro social", "den numero seguro social", "pedir numero seguro social", "localicen numero seguro social"],
+			"respuestas":[
+				"Este tramite cuenta con modalidad tanto presencial como en linea. Para realizar el tramite en linea debera entrar al siguiente link y tener a la mano un correo electronico donde le llegara toda la información y su CURP. https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/asignacionNSS;JSESSIONIDASEGEXTERNO=Wmle4dHJBfUuckhnc0tp3p26Yf0mShg7udNAfPlNHRuL28mPSKA4!-1100133577 Si desea realizar el tramite presencial debera acudir a su clinica más cercana de lunes a viernes de 8 a 15 horas con su acta de nacimeinto identificación oficial, CURP y poder notarial en caso de que el registro de nacimiento se haya realizado por Autoridad Civil (DIF y PGR)."
+			]
+		},
+		{
+			"tag": "certificado_discapacidad",
+			"patrones":["obtener certificado discapacidad", "obtener certificado discapacidad articulo 186", "sacar certificacdo discapacidad", "sacar certificado discapacidad articulo 186"],
+			"respuestas":[
+				"Para obetner su certificado de discapacidad con fines de aplicación del artículo 186 de la Ley del Impuesto Sobre la Renta debera acudir a su clinica asignada de lunes a vierns en un horario de 8 a 19 horas con los siguientes documentos: Solicitud de Certificado de Discapacidad que obtendra en el siguiente link: http://www.imss.gob.mx/sites/all/statics/pdf/tramites-varios/certif-186-solicitud-instructivo.pdf Identificación oficial con fotografia y firma Copia del aviso de inscripción al IMSS del trabajador de la liquidación del pago de cuotas obrero-patronales del Sistema Único de Autodeterminación (SUA) o Emisión Mensual Anticipada (EMA)"
+			]
+		},
+		{
+			"tag": "entrega_bienes",
+			"patrones":["solicitar entrega bienes rematados subasta", "solicitar entrega bienes subasta", "solicitar bienes subasta"],
+			"respuestas":[
+				"Para solicitar la entrega de bienes rematados en una subasta del IMSS deberas presnetarte en la Oficina para Cobros donde se realizo la subasa de lunes a viernes de 8 a 15 con el acta de remates como postor ganador, recibo de pago efectuado del 90% del importe ofrecido en la puja e identificación oficial. En caso de realizar el tramite un representante legal este debera traer poder notarial , carta poder ratificada y su identificación oficial."
+			]
+		},
+		{
+			"tag": "incorporacion_familia",
+			"patrones":["incorporación seguro familia imss", "incorporar seguro familia imss", "asegurar familia imss"],
+			"respuestas":[
+				"Para incorporar a su familia al seguro de salud del IMSS sin contar con un esquema de seguridad social podras realizar el tramite tanto en linea como en fisico. Para realizar tu tramite en linea deberas tener a la mano tu NSS y un correo electronico y entrar al siguiente enlace: https://serviciosdigitales.imss.gob.mx/portal-ciudadano-web-externo/home En caso de realizar tu tramite en fisico deberas acudir a tu clinica más cercana con  acta de matrimonio, identificación oficial, CURP, comprobante de pago de anualidad anticipada, Acta de nacimeinto, comprobante de domicilio y cuestionario medico proporcionado por el IMSS."
 			]
 		},
 		{
 			"tag": "groserias",
-			"patrones":["puto"],
-			"respuestas":["Callate perra"]
+			"patrones":["puto", "pendejo", "estupido", "idiota", "mierda", "cabron"],
+			"respuestas":["Callate perra", "No andes diciendo mamadas", "Chinga tu madre"]
 		}
 	]
 }
