@@ -6,6 +6,9 @@ import tensorflow as tf
 import json
 import random
 import pickle
+import discord
+
+llave = "OTczNzQ0NDE3MTgzNzY0NTI5.GlBep0.4_JA5V_nvCWrGlIPL30TwdRH3YvSASdTb7QIfI"
 
 stemmer = LancasterStemmer()
 
@@ -85,22 +88,28 @@ modelo.fit(entrenamiento, salida, n_epoch=1000, batch_size=301, show_metric=True
 
 #Funcion principal que reconoce lo que introduce el usuario y lo compara para dar una respuesta:
 def mainBot():
-    while True:
-        entrada = input("Tu: ")
-        cubeta = [0 for _ in range(len(palabras))]
-        entradaProcesada = nltk.word_tokenize(entrada)
-        entradaProcesada = [stemmer.stem(palabra.lower()) for palabra in entradaProcesada]
-        for palabraIndividual in entradaProcesada:
-            for i, palabra in enumerate(palabras):
-                if palabra == palabraIndividual:
-                    cubeta[i] = 1
-        resultados = modelo.predict([np.array(cubeta)])
-        resultadosIndices = np.argmax(resultados)
-        tag = tags[resultadosIndices]
+	global llave
+	cliente = discord.Client()
+	while True:
+		@cliente.event
+		async def on_message(mensaje):
+			if mensaje.author == cliente.user:
+				return
+			cubeta = [0 for _ in range(len(palabras))]
+			entradaProcesada = nltk.word_tokenize(mensaje.content)
+			entradaProcesada = [stemmer.stem(palabra.lower()) for palabra in entradaProcesada]
+			for palabraIndividual in entradaProcesada:
+				for i, palabra in enumerate(palabras):
+					if palabra == palabraIndividual:
+						cubeta[i] = 1
+			resultados = modelo.predict([np.array(cubeta)])
+			resultadosIndices = np.argmax(resultados)
+			tag = tags[resultadosIndices]
 
-        for tagAux in datos["contenido"]:
-            if tagAux["tag"] == tag:
-                respuesta = tagAux["respuestas"]
-        
-        print("BOT:", random.choice(respuesta))
+			for tagAux in datos["contenido"]:
+				if tagAux["tag"] == tag:
+					respuesta = tagAux["respuestas"]
+			#print("BOT:", random.choice(respuesta))
+			await mensaje.channel.send(random.choice(respuesta))
+		cliente.run(llave)
 mainBot()
