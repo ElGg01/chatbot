@@ -13,22 +13,21 @@ stemmer = LancasterStemmer()
 with open("contenido.json", encoding='utf-8') as archivo:
     datos = json.load(archivo)
 
-
 palabras = []
 tags = []
 aux1 = []
 aux2 = []
 #Separamos en palabras:
 for contenido in datos["contenido"]:
-	for patrones in contenido["patrones"]:
-		#Separa oraciones en palabras:
-		auxPalabra = nltk.word_tokenize(patrones)
-		palabras.extend(auxPalabra)
-		aux1.append(auxPalabra)
-		aux2.append(contenido["tag"])
+    for patrones in contenido["patrones"]:
+        #Separa oraciones en palabras:
+        auxPalabra = nltk.word_tokenize(patrones)
+        palabras.extend(auxPalabra)
+        aux1.append(auxPalabra)
+        aux2.append(contenido["tag"])
 
-		if contenido["tag"] not in tags:
-			tags.append(contenido["tag"])
+        if contenido["tag"] not in tags:
+            tags.append(contenido["tag"])
 #Simplificamos el texto para que sea mas facil analizarlo:
 palabras = [stemmer.stem(w.lower()) for w in palabras if w!= "?" or w != "¿" or w != "¡" or w !="!"]
 palabras = sorted(list(set(palabras)))
@@ -41,17 +40,17 @@ salidaVacia = [0 for _ in range(len(tags))]
 
 #Usamos el algoritmo de la cubeta:
 for x, documento in enumerate(aux1):
-	cubeta = []
-	auxPalabra = [stemmer.stem(w.lower()) for w in documento if w!= "?" or w != "¿" or w != "¡" or w !="!"]
-	for w in palabras:
-		if w in auxPalabra:
-			cubeta.append(1)
-		else:
-			cubeta.append(0)
-	filaSalida = salidaVacia[:]
-	filaSalida[tags.index(aux2[x])] = 1
-	entrenamiento.append(cubeta)
-	salida.append(filaSalida)
+    cubeta = []
+    auxPalabra = [stemmer.stem(w.lower()) for w in documento if w!= "?" or w != "¿" or w != "¡" or w !="!"]
+    for w in palabras:
+        if w in auxPalabra:
+            cubeta.append(1)
+        else:
+            cubeta.append(0)
+    filaSalida = salidaVacia[:]
+    filaSalida[tags.index(aux2[x])] = 1
+    entrenamiento.append(cubeta)
+    salida.append(filaSalida)
 
 #Cargamos el archivo pickle con toda la informacion:
 entrenamiento = np.array(entrenamiento)
