@@ -7,7 +7,7 @@
 		},
 		{
 			"tag": "despedida",
-			"patrones":["adios", "nos vemos"],
+			"patrones":["adios", "nos vemos", "bye", "salir"],
 			"respuestas":["Hasta la proxima!", "Nos vemos pronto!"]
 		},
 		{
@@ -121,6 +121,11 @@
 			"respuestas":[
 				"Para incorporar a su familia al seguro de salud del IMSS sin contar con un esquema de seguridad social podras realizar el tramite tanto en linea como en fisico. Para realizar tu tramite en linea deberas tener a la mano tu NSS y un correo electronico y entrar al siguiente enlace: https://serviciosdigitales.imss.gob.mx/portal-ciudadano-web-externo/home En caso de realizar tu tramite en fisico deberas acudir a tu clinica más cercana con  acta de matrimonio, identificación oficial, CURP, comprobante de pago de anualidad anticipada, Acta de nacimeinto, comprobante de domicilio y cuestionario medico proporcionado por el IMSS."
 			]
+		},
+		{
+			"tag": "nada",
+			"patrones": [""],
+			"respuestas": ["No te entendi, podrias repetirlo?"]
 		}
 	]
 }
