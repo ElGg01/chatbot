@@ -2,8 +2,8 @@
 	"contenido": [
 		{
 			"tag": "saludo",
-			"patrones": ["Hola", "saludo"],
-			"respuestas": ["Hola, como estas?", "Que tal va todo?"]
+			"patrones": ["Hola", "saludo", "alo", "Buenos dias", "buenas tardes", "buenas noches"],
+			"respuestas": ["¿Hola, como estas?", "¿Qué tal va todo?"]
 		},
 		{
 			"tag": "despedida",
