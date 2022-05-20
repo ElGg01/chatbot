@@ -2,40 +2,40 @@
 	"contenido": [
 		{
 			"tag": "saludo",
-			"patrones": ["Hola", "saludo", "alo", "Buenos dias", "buenas tardes", "buenas noches"],
-			"respuestas": ["¿Hola, como estas?", "¿Qué tal va todo?"]
+			"patrones": ["Hola", "saludos", "alo", "Buenos dias", "buenas tardes", "buenas noches", "un saludo"],
+			"respuestas": ["¿Hola, cómo estas?", "¿Qué tal va todo?"]
 		},
 		{
 			"tag": "despedida",
 			"patrones":["adios", "nos vemos", "bye", "salir"],
-			"respuestas":["Hasta la proxima!", "Nos vemos pronto!"]
+			"respuestas":["¡Hasta la proxima!", "¡Nos vemos pronto!"]
 		},
 		{
 			"tag": "alta_umf",
 			"patrones":["darme alta", "dar alta clinica", "darme alta umf", "darme alta clinica", "dar alta umf", "registrar umf", "registrar clinica"],
 			"respuestas":[
-				"Para realizar el alta de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, NSS, una fotografia infantil y acta de nacimiento"
+				"Para realizar el alta de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, NSS, una fotografia infantil y acta de nacimiento."
 			]
 		},
 		{
 			"tag": "baja_umf",
 			"patrones":["dar baja", "dar baja clinica", "dar baja umf", "dar baja clinica", "dar baja umf"],
 			"respuestas":[
-				"Para realizar la baja de un UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, NSS, CURP y acta de defuncion o acta de divorcio en caso de baja por divorcio"
+				"Para realizar la baja de un UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, NSS, CURP y acta de defuncion o acta de divorcio en caso de baja por divorcio."
 			]
 		},
 		{
 			"tag": "actualizar_umf",
 			"patrones":["actualizar clinica", "actualizar umf", "cambiar clinica", "cambiar umf", "modificar umf", "modificar clinica"],
 			"respuestas":[
-				"Para realizar la actualización de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, NSS y una fotografia infantil"
+				"Para realizar la actualización de tu UMF deberas acudir a tu clinica mas cercana a tu domicilio con tu identificación oficial, comprobante de domicilio, NSS y una fotografia infantil."
 			]
 		},
 		{
 			"tag": "accidente_trabajo",
 			"patrones":["calificación accidente", "accidente laboral", "enfermedad trabajo", "enfermedad laboral", "accidente trabajo", "calificación accidente"],
 			"respuestas":[
-				"Para obtener tu aviso para calificación de accidente o enfermedad de trabajo ante el IMSS deberas acudir a tu clinica que te corresponda de acuerdo a tu domicilio con tu identificación oficial, cartilla nacional de salud, aviso de atención médica inicial y calificación de probable accidente de trabajo ST-7 y ST-9. En caso de defunción sera acta de defunción, certificado de necropsia que incluya examen toxicológico copia certificada de la Averiguación Previa del Ministerio Público y resumen medico de atención inicial de servicios en caso de tenerlo"
+				"Para obtener tu aviso para calificación de accidente o enfermedad de trabajo ante el IMSS deberas acudir a tu clinica que te corresponda de acuerdo a tu domicilio con tu identificación oficial, cartilla nacional de salud, aviso de atención médica inicial y calificación de probable accidente de trabajo ST-7 y ST-9. En caso de defunción sera acta de defunción, certificado de necropsia que incluya examen toxicológico copia certificada de la Averiguación Previa del Ministerio Público y resumen medico de atención inicial de servicios en caso de tenerlo."
 			]
 		},
 		{
@@ -70,7 +70,7 @@
 			"tag": "dictamen_incapacidad",
 			"patrones":["obtener dictamen incapacidad", "dictamen incapacidad",  "sacar dictamen incapacidad"],
 			"respuestas":[
-				"Para obtener tu dictamen de incapacidad deberas acudir a tu clinica mas cercana a tu domicilio con tu Cartilla Nacinal de Salud, identificación oficial, solicitud de beneficiario incapacitado ante el Control de Prestaciones de la Unidad de Medicina Familiar y pase del servicio de medicina familiar o de especialista médico de segundo ó tercer nivel de Atención a Salud en el Trabajo"
+				"Para obtener tu dictamen de incapacidad deberas acudir a tu clinica mas cercana a tu domicilio con tu Cartilla Nacinal de Salud, identificación oficial, solicitud de beneficiario incapacitado ante el Control de Prestaciones de la Unidad de Medicina Familiar y pase del servicio de medicina familiar o de especialista médico de segundo ó tercer nivel de Atención a Salud en el Trabajo."
 			]
 		},
 		{
@@ -105,7 +105,7 @@
 			"tag": "certificado_discapacidad",
 			"patrones":["obtener certificado discapacidad", "obtener certificado discapacidad articulo 186", "sacar certificacdo discapacidad", "sacar certificado discapacidad articulo 186"],
 			"respuestas":[
-				"Para obetner su certificado de discapacidad con fines de aplicación del artículo 186 de la Ley del Impuesto Sobre la Renta debera acudir a su clinica asignada de lunes a vierns en un horario de 8 a 19 horas con los siguientes documentos: Solicitud de Certificado de Discapacidad que obtendra en el siguiente link: http://www.imss.gob.mx/sites/all/statics/pdf/tramites-varios/certif-186-solicitud-instructivo.pdf Identificación oficial con fotografia y firma Copia del aviso de inscripción al IMSS del trabajador de la liquidación del pago de cuotas obrero-patronales del Sistema Único de Autodeterminación (SUA) o Emisión Mensual Anticipada (EMA)"
+				"Para obetner su certificado de discapacidad con fines de aplicación del artículo 186 de la Ley del Impuesto Sobre la Renta debera acudir a su clinica asignada de lunes a vierns en un horario de 8 a 19 horas con los siguientes documentos: Solicitud de Certificado de Discapacidad que obtendra en el siguiente link: http://www.imss.gob.mx/sites/all/statics/pdf/tramites-varios/certif-186-solicitud-instructivo.pdf Identificación oficial con fotografia y firma Copia del aviso de inscripción al IMSS del trabajador de la liquidación del pago de cuotas obrero-patronales del Sistema Único de Autodeterminación (SUA) o Emisión Mensual Anticipada (EMA)."
 			]
 		},
 		{
@@ -125,7 +125,7 @@
 		{
 			"tag": "nada",
 			"patrones": [""],
-			"respuestas": ["No te entendi, podrias repetirlo?"]
+			"respuestas": ["No te entendi, ¿podrías repetirlo?", "Intenta diciendolo de otra manera"]
 		}
 	]
 }

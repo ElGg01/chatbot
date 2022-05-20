@@ -33,7 +33,7 @@ for contenido in datos["contenido"]:
 		if contenido["tag"] not in tags:
 			tags.append(contenido["tag"])
 #Simplificamos el texto para que sea mas facil analizarlo:
-palabras = [stemmer.stem(w.lower()) for w in palabras if w!= "?" or w != "¿" or w != "¡" or w !="!"]
+palabras = [stemmer.stem(w.lower()) for w in palabras if w != "?" or w != "¿" or w != "¡" or w !="!"]
 palabras = sorted(list(set(palabras)))
 tags = sorted(tags)
 
